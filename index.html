@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Word Puzzle Game</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Word Puzzle Game</h1>
+    <div id="level-container">
+      <h2 id="level-title">Level 1</h2>
+      <p id="jumbled-letters">E U M R L B</p>
+      <p id="puzzle-hint">Guess the word:</p>
+      <input type="text" id="user-input" placeholder="Enter your guess">
+      <button id="submit-button">Submit</button>
+    
+      <p id="result-message"></p>
+    </div>
+    <div id="popup-container" class="hidden">
+      <div id="popup-content">
+        <h2></h2>
+        <p></p>
+      </div>
+      <footer>
+        <p>Remember! You only have 3 attemps.</p>
+      </footer>
+
+    </div>
+  </div>
+  <footer>
+    <h2>Tao na laging kulang sa bebetime</h2>
+    <p>Developed by Kobie O. Villanueva</p>
+  </footer>
+  <div class="dark-mode-toggle">
+    <input type="checkbox" id="dark-mode-toggle-checkbox">
+    <label for="dark-mode-toggle-checkbox">
+      <img src="Images/sun.png" alt="Day Mode" class="day-icon">
+      <img src="Images/night.png" alt="Night Mode" class="night-icon">
+    </label>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
